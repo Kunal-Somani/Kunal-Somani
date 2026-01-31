@@ -1,5 +1,9 @@
 <h1 align="center">Hi, I'm Kunal 👋</h1>
-<h3 align="center">Robotics & AI Undergraduate @ Thapar Institute ● BS in Data Science @ IIT Madras <br> Building Autonomous Agents & Hardware-Software Integrated Systems</h3>
+<h3 align="center">
+    Robotics & AI Undergraduate @ Thapar Institute<br>
+    BS in Data Science @ IIT Madras<br>
+    Building Autonomous Agents & Hardware-Software Integrated Systems
+</h3>
 
 <br>
 
