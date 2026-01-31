@@ -1,4 +1,4 @@
-# I'm Kunal
+#                                   I'm Kunal
 Introduction<br><br>    • Pre-final year Robotics & AI student at Thapar Institute.<br><br>    • Pursuing BS in Data Science at IIT Madras (Diploma Level).<br><br>    • Specializing in Machine Learning, Robotics, and Autonomous Systems.<br><br>    • Experienced in Python (Advanced AI & Scientific Computing ecosystems), Docker, and n8n automations.<br><br>About Me<br><br>    • 🔭 I’m currently working on: A comprehensive hardware-software integrated Robotics-AI capstone project, alongside autonomous agentic system development.<br><br>    • 👯 I’m looking to collaborate on: LLM-RAG systems, General Machine Learning & Deep Learning projects, and open-source AI tools.<br><br>    • 🌱 I’m currently learning: Advanced Deep Learning & Reinforcement Learning, Advanced ROS2, and NVIDIA AI & Simulation Platforms (Isaac Sim, Omniverse).<br><br>    • 💬 Ask me about: Python, Deep Learning Architectures, Docker, n8n workflows, and Robotics.<br><br>    • ⚡ Fun fact: Bridging the physical-digital divide by pursuing parallel technical degrees in Robotics & AI and Data Science.
 
 
