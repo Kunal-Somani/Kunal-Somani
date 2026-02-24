@@ -79,22 +79,13 @@
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kunal-Somani&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="Top Langs" />
 </p>
 
-<h3 align="center">🏆 GitHub Trophies</h3>
-<p align="center">
-    <img src="https://github-profile-trophy.vercel.app/?username=Kunal-Somani&theme=radical&no-frame=false&no-bg=false&margin-w=4" alt="Trophies" />
-</p>
 
 <h3 align="center">✍️ Random Dev Quote</h3>
 <p align="center">
     <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Dev Quote" />
 </p>
 
-<h3 align="center">🔝 Top Contributed Repo</h3>
-<p align="center">
-    <img src="https://github-contributor-stats.vercel.app/api?username=Kunal-Somani&limit=5&theme=dark&combine_all_yearly_contributions=true" alt="Top Contributed" />
-</p>
 
-<hr>
 
 <p align="center">
     <a href="https://visitcount.itsvg.in">
