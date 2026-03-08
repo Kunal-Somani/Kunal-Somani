@@ -19,11 +19,11 @@
 <br>
 
 <ul>
-    <li>🔭 I’m currently working on <strong> a comprehensive hardware-software integrated Robotics-AI capstone project, alongside autonomous agentic system development.</strong></li>
-    <li>👯 I’m looking to collaborate on <strong>LLM-RAG systems, General Machine Learning & Deep Learning projects, and open-source AI tools.</strong></li>
-    <li>🌱 I’m currently learning <strong>Advanced Deep Learning & Reinforcement Learning, Advanced ROS2, and NVIDIA AI & Simulation Platforms (Isaac Sim, Omniverse).</strong></li>
-    <li>💬 Ask me about <strong>Python, Deep Learning Architectures, Docker, n8n workflows, and Robotics.</strong></li>
-    <li>⚡ Fun fact <strong>Bridging the physical-digital divide by pursuing parallel technical degrees in Robotics & AI and Data Science.</strong></li>
+    <li> I’m currently working on <strong> a comprehensive hardware-software integrated Robotics-AI capstone project, alongside autonomous agentic system development.</strong></li>
+    <li> I’m looking to collaborate on <strong>LLM-RAG systems, General Machine Learning & Deep Learning projects, and open-source AI tools.</strong></li>
+    <li> I’m currently learning <strong>Advanced Deep Learning & Reinforcement Learning, Advanced ROS2, and NVIDIA AI & Simulation Platforms (Isaac Sim, Omniverse).</strong></li>
+    <li> Ask me about <strong>Python, Deep Learning Architectures, Docker, n8n workflows, and Robotics.</strong></li>
+    <li> Fun fact <strong>Bridging the physical-digital divide by pursuing parallel technical degrees in Robotics & AI and Data Science.</strong></li>
 </ul>
 
 <h3 align="left">Connect with me:</h3>
