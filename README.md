@@ -29,12 +29,12 @@ My work lives in two worlds: getting deep learning models to run on hardware wit
 
 ## Open-Source Contributions
 
-| Organisation | Repository | Status | Period |
-|---|---|---|---|
-| JdeRobot | Robotics Academy | PRs Merged | Feb 2026–Present |
-| GFOSS | ORION CubeSat Edge AI Payload | PRs Open | Feb 2026–Present |
-| Kubeflow | Kubeflow Pipelines | PRs Open | Feb 2026–Present |
-| Uramaki Lab | — | PRs Open | Feb 2026–Present |
+| Organisation | Repository | Contribution | Status | Period |
+|---|---|---|---|---|
+| JdeRobot | Robotics Academy | ROS 2 HAL refactor, FP16 crash fix, execution loop optimization | PRs Merged | Feb 2026–Present |
+| GFOSS | ORION CubeSat Edge AI Payload | YOLOv8 edge pipeline, Eclipse Zenoh async middleware | PRs Open | Feb 2026–Present |
+| Kubeflow | docs-agent | Fix asyncio event loop starvation — offloaded Milvus vector search to ThreadPoolExecutor | PRs Open | Feb 2026–Present |
+| RuxaiLab (Uramaki Lab) | facial-sentiment-analysis-api | Fix ZeroDivisionError in MVP pipeline, dynamic video loading via CLI | PRs Open | Feb 2026–Present |
 
 ---
 
@@ -101,8 +101,6 @@ My work lives in two worlds: getting deep learning models to run on hardware wit
 ## GitHub Stats
 
 <div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Kunal-Somani&theme=dark&hide_border=true&include_all_commits=true&count_private=true)
 
 ![Streak Stats](https://nirzak-streak-stats.vercel.app/?user=Kunal-Somani&theme=dark&hide_border=true)
 
