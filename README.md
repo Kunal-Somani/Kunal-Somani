@@ -21,10 +21,10 @@ I'm a pre-final year undergrad pursuing a rare dual degree in **Robotics & AI** 
 
 My work lives in two worlds: getting deep learning models to run on hardware with real-time constraints, and building AI agents that think, route, and act autonomously. I care about systems that are not just intelligent in theory, but that actually work when deployed — on edge devices, in production APIs, and in open-source codebases.
 
-- 🔬 **Research:** Built an IoT + voice multimodal pipeline for early Parkinson's detection (>95% classification accuracy)
-- 🤖 **Robotics:** Engineered HIL testing and kinematic control systems for 2 custom robots at MARS Society
-- 🌍 **Open Source:** Active contributor to **JdeRobot** (ROS 2 robotics education) and **GFOSS Omega Space Group** (CubeSat Edge AI)
-- ⚡ **Focus:** Edge AI deployment, LLM-driven autonomous agents, ROS 2 middleware, and production RAG architectures
+- **Research:** Built an IoT + voice multimodal pipeline for early Parkinson's detection (>95% classification accuracy)
+- **Robotics:** Engineered HIL testing and kinematic control systems for 2 custom robots at MARS Society
+- **Open Source:** Merged contributor at **JdeRobot**; active PRs at **GFOSS**, **Kubeflow**, and **Uramaki Lab**
+- **Focus:** Edge AI deployment, LLM-driven autonomous agents, ROS 2 middleware, and production RAG architectures
 
 ---
 
@@ -40,14 +40,20 @@ Engineered kinematic control logic and HIL testing protocols for 2 custom roboti
 
 ## Open-Source Contributions
 
-**JdeRobot — Robotics Academy** `ROS 2 · PyTorch · Docker` *(Feb 2026–Present)*  
+**JdeRobot — Robotics Academy** `ROS 2 · PyTorch · Docker` *(Feb 2026–Present)* — PRs merged  
 - Navigated a complex Dockerized ROS 2 (Humble) architecture to merge PRs, optimizing execution loops across 50+ robotic exercise templates  
 - Refactored the Hardware Abstraction Layer (HAL) to enforce strict memory identity evaluations  
 - Resolved an FP16 precision crash in the Object Detection pipeline by dynamically configuring PyTorch tensor allocation for CPU-bound environments
 
-**GFOSS — ORION CubeSat Edge AI Payload** `YOLOv8 · Eclipse Zenoh · Jetson` *(Jan–Mar 2026)*  
-- Deployed an Ultralytics YOLOv8 computer vision pipeline on NVIDIA Jetson, processing live camera frames at 30+ FPS  
-- Built async Pub/Sub middleware using Eclipse Zenoh + Pydantic, serializing tensor outputs into the telemetry stream with **3.5ms latency** on x86
+**GFOSS — ORION CubeSat Edge AI Payload** `YOLOv8 · Eclipse Zenoh · Jetson` *(Feb 2026–Present)* — PRs open  
+- Architected a live computer vision pipeline deploying YOLOv8 on NVIDIA Jetson, processing camera frames at 30+ FPS  
+- Engineered async Pub/Sub middleware using Eclipse Zenoh + Pydantic, serializing tensor outputs into the telemetry stream with **3.5ms latency** on x86
+
+**Kubeflow** `MLOps · Kubernetes · Python` *(Feb 2026–Present)* — PRs open  
+- Contributing to ML pipeline orchestration and workflow tooling within the Kubeflow ecosystem
+
+**Uramaki Lab** *(Feb 2026–Present)* — PRs open  
+- Active contributor with ongoing pull requests under review
 
 ---
 
