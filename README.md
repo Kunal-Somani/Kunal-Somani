@@ -27,32 +27,14 @@ My work lives in two worlds: getting deep learning models to run on hardware wit
 
 ---
 
-## Experience
-
-**Summer Research Intern** — Experiential Learning Centre *(Jun–Jul 2025)*  
-Architected a multimodal deep learning pipeline fusing IoT sensor and voice data for early-stage Parkinson's detection. Applied advanced signal processing in Python to hit >95% predictive accuracy.
-
-**Robotics Engineer** — MARS Society *(Nov 2024–Jun 2025)*  
-Engineered kinematic control logic and HIL testing protocols for 2 custom robotic platforms using ROS 2 and Gazebo Classic/Harmonic. Integrated microcontrollers with spatial sensors for autonomous navigation; maintained 3D architectures in SolidWorks.
-
----
-
 ## Open-Source Contributions
 
-**JdeRobot — Robotics Academy** `ROS 2 · PyTorch · Docker` *(Feb 2026–Present)* — PRs merged  
-- Navigated a complex Dockerized ROS 2 (Humble) architecture to merge PRs, optimizing execution loops across 50+ robotic exercise templates  
-- Refactored the Hardware Abstraction Layer (HAL) to enforce strict memory identity evaluations  
-- Resolved an FP16 precision crash in the Object Detection pipeline by dynamically configuring PyTorch tensor allocation for CPU-bound environments
-
-**GFOSS — ORION CubeSat Edge AI Payload** `YOLOv8 · Eclipse Zenoh · Jetson` *(Feb 2026–Present)* — PRs open  
-- Architected a live computer vision pipeline deploying YOLOv8 on NVIDIA Jetson, processing camera frames at 30+ FPS  
-- Engineered async Pub/Sub middleware using Eclipse Zenoh + Pydantic, serializing tensor outputs into the telemetry stream with **3.5ms latency** on x86
-
-**Kubeflow** `MLOps · Kubernetes · Python` *(Feb 2026–Present)* — PRs open  
-- Contributing to ML pipeline orchestration and workflow tooling within the Kubeflow ecosystem
-
-**Uramaki Lab** *(Feb 2026–Present)* — PRs open  
-- Active contributor with ongoing pull requests under review
+| Organisation | Repository | Status | Period |
+|---|---|---|---|
+| JdeRobot | Robotics Academy | PRs Merged | Feb 2026–Present |
+| GFOSS | ORION CubeSat Edge AI Payload | PRs Open | Feb 2026–Present |
+| Kubeflow | Kubeflow Pipelines | PRs Open | Feb 2026–Present |
+| Uramaki Lab | — | PRs Open | Feb 2026–Present |
 
 ---
 
@@ -81,26 +63,38 @@ Engineered kinematic control logic and HIL testing protocols for 2 custom roboti
 ![Gazebo](https://img.shields.io/badge/Gazebo-FF6600?style=flat&logoColor=white)
 ![Eclipse Zenoh](https://img.shields.io/badge/Eclipse_Zenoh-2C2255?style=flat&logoColor=white)
 ![MATLAB](https://img.shields.io/badge/MATLAB-D97615?style=flat&logo=mathworks&logoColor=white)
+![CUDA](https://img.shields.io/badge/CUDA-76B900?style=flat&logo=nvidia&logoColor=white)
 
 **AI & Computer Vision**  
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=PyTorch&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=TensorFlow&logoColor=white)
+![Keras](https://img.shields.io/badge/Keras-D00000?style=flat&logo=keras&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white)
 ![YOLOv8](https://img.shields.io/badge/YOLOv8-111F68?style=flat&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white)
 ![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=flat&logo=huggingface&logoColor=black)
+![Scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat&logo=plotly&logoColor=white)
 
 **Backend & Databases**  
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white)
 ![n8n](https://img.shields.io/badge/n8n-FF6D5A?style=flat&logo=n8n&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
 
 **DevOps & Infra**  
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat&logo=cloudflare&logoColor=white)
+![Anaconda](https://img.shields.io/badge/Anaconda-44A833?style=flat&logo=anaconda&logoColor=white)
 
 ---
 
@@ -108,9 +102,11 @@ Engineered kinematic control logic and HIL testing protocols for 2 custom roboti
 
 <div align="center">
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Kunal-Somani&theme=dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Kunal-Somani&theme=dark&hide_border=true&include_all_commits=true&count_private=true)
 
-![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Kunal-Somani&theme=react-dark&hide_border=true)
+![Streak Stats](https://nirzak-streak-stats.vercel.app/?user=Kunal-Somani&theme=dark&hide_border=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Kunal-Somani&theme=dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact)
 
 </div>
 
