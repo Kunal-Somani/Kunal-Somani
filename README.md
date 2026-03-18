@@ -9,7 +9,6 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/kunal-somani-227373344)
 [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:kunal120222@gmail.com)
-[![Profile Views](https://komarev.com/ghpvc/?username=Kunal-Somani&color=0e75b6&style=flat)](https://github.com/Kunal-Somani)
 
 </div>
 
@@ -109,11 +108,9 @@ Engineered kinematic control logic and HIL testing protocols for 2 custom roboti
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Kunal-Somani&theme=dark&hide_border=true&include_all_commits=true&count_private=true)
-
-![Streak Stats](https://nirzak-streak-stats.vercel.app/?user=Kunal-Somani&theme=dark&hide_border=true)
-
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Kunal-Somani&theme=dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact)
+
+![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Kunal-Somani&theme=react-dark&hide_border=true)
 
 </div>
 
