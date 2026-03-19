@@ -1,6 +1,6 @@
 <div align="center">
 
-# Kunal Somani
+# Kunal
 
 ### Robotics & AI · Edge Intelligence · Autonomous Agents
 
