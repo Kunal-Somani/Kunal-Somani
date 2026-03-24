@@ -29,32 +29,11 @@ My work lives in two worlds: getting deep learning models to run on hardware wit
 
 ## Open-Source Contributions
 
-**JdeRobot — Robotics Academy** `ROS 2 · Python · Bash · Docker` — 7 PRs Merged *(Feb 2026–Present)*
-
-| PR | What it fixed |
-|---|---|
-| #3571 | Docs: typos and grammar in README |
-| #3572 | Refactor: PEP8 `is None` enforcement across HAL + Frequency templates; validated with live Gazebo exercise recordings |
-| #3620 | Fix: broken `getopts` string, Docker Compose V2 detection, missing preflight checks, `curl` error handling in `run_academy.sh` |
-| #3634 | Fix: undefined `Help` function call, incorrect Docker Compose V2 check, unquoted variables in `develop_academy.sh` |
-| #3635 | Fix: FP16 precision crash in Object Detection pipeline via dynamic PyTorch tensor allocation for CPU environments |
-| #3637 | Refactor: HAL memory identity evaluations; resolved 100+ linter warnings |
-| #3638 | Tests: 35 unit tests across 5 test classes covering views, filesystem, exceptions, path traversal security |
-
-**Kubeflow / CNCF — docs-agent** `FastAPI · asyncio · Milvus · LangChain` — 6 PRs Open *(Mar 2026–Present)*
-- Fixed 10.14s asyncio event loop starvation — offloaded Milvus vector search to `run_in_executor()`
-- Eliminated 2–4s per-query latency by promoting SentenceTransformer (~400MB) to module-level singleton
-- Added `MAX_TOOL_DEPTH=3` recursion guard preventing stack overflow on multi-hop LLM tool calls
-- Fixed `ZeroDivisionError` crashes in both standard and incremental KFP chunking pipelines
-
-**RuxaiLab — sentiment-analysis-api & facial-sentiment-analysis-api** `Flask · TensorFlow · OpenCV` — 6 PRs Open *(Feb 2026–Present)*
-- Fixed malformed `logger.debug()` f-string calls silently dropping debug output; added 2 new `remove_audio` branch tests
-- Fixed whitespace-only text bypassing input validation, reaching the ML model with no error returned
-- Fixed `ZeroDivisionError` in MVP pipeline on empty prediction arrays; wired dynamic CLI video path into `cv2.VideoCapture()`
-
-**GFOSS — ORION CubeSat Edge AI Payload** `YOLOv8 · Eclipse Zenoh · Jetson` *(Feb 2026–Present)*
-- Architected live YOLOv8 computer vision pipeline on NVIDIA Jetson at 30+ FPS
-- Engineered async Pub/Sub middleware via Eclipse Zenoh + Pydantic with 3.5ms telemetry latency on x86
+| Organisation | Repository | Contribution | Status | Period |
+|---|---|---|---|---|
+| JdeRobot | Robotics Academy | FP16 crash fix, HAL refactor, deployment script fixes, 35 unit tests | 7 PRs Merged | Feb 2026–Present |
+| Kubeflow / CNCF | docs-agent | Asyncio event loop fix, SentenceTransformer singleton, KFP pipeline crash fixes | 6 PRs Open | Mar 2026–Present |
+| RuxaiLab | sentiment-analysis-api · facial-sentiment-analysis-api | Logger bug fixes, input validation, ZeroDivisionError fix, test coverage | 6 PRs Open | Feb 2026–Present |
 
 ---
 
