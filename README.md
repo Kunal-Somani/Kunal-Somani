@@ -22,19 +22,39 @@ My work lives in two worlds: getting deep learning models to run on hardware wit
 
 - **Research:** Built an IoT + voice multimodal pipeline for early Parkinson's detection (>95% classification accuracy)
 - **Robotics:** Engineered HIL testing and kinematic control systems for 2 custom robots at MARS Society
-- **Open Source:** Merged contributor at **JdeRobot**; active PRs at **GFOSS**, **Kubeflow**, and **Uramaki Lab**
+- **Open Source:** 7 merged PRs at **JdeRobot**; active contributions at **Kubeflow/CNCF**, **RuxaiLab**, and **GFOSS**
 - **Focus:** Edge AI deployment, LLM-driven autonomous agents, ROS 2 middleware, and production RAG architectures
 
 ---
 
 ## Open-Source Contributions
 
-| Organisation | Repository | Contribution | Status | Period |
-|---|---|---|---|---|
-| JdeRobot | Robotics Academy | ROS 2 HAL refactor, FP16 crash fix, execution loop optimization | PRs Merged | Feb 2026–Present |
-| GFOSS | ORION CubeSat Edge AI Payload | YOLOv8 edge pipeline, Eclipse Zenoh async middleware | PRs Open | Feb 2026–Present |
-| Kubeflow | docs-agent | Fix asyncio event loop starvation — offloaded Milvus vector search to ThreadPoolExecutor | PRs Open | Feb 2026–Present |
-| RuxaiLab (Uramaki Lab) | facial-sentiment-analysis-api | Fix ZeroDivisionError in MVP pipeline, dynamic video loading via CLI | PRs Open | Feb 2026–Present |
+**JdeRobot — Robotics Academy** `ROS 2 · Python · Bash · Docker` — 7 PRs Merged *(Feb 2026–Present)*
+
+| PR | What it fixed |
+|---|---|
+| #3571 | Docs: typos and grammar in README |
+| #3572 | Refactor: PEP8 `is None` enforcement across HAL + Frequency templates; validated with live Gazebo exercise recordings |
+| #3620 | Fix: broken `getopts` string, Docker Compose V2 detection, missing preflight checks, `curl` error handling in `run_academy.sh` |
+| #3634 | Fix: undefined `Help` function call, incorrect Docker Compose V2 check, unquoted variables in `develop_academy.sh` |
+| #3635 | Fix: FP16 precision crash in Object Detection pipeline via dynamic PyTorch tensor allocation for CPU environments |
+| #3637 | Refactor: HAL memory identity evaluations; resolved 100+ linter warnings |
+| #3638 | Tests: 35 unit tests across 5 test classes covering views, filesystem, exceptions, path traversal security |
+
+**Kubeflow / CNCF — docs-agent** `FastAPI · asyncio · Milvus · LangChain` — 6 PRs Open *(Mar 2026–Present)*
+- Fixed 10.14s asyncio event loop starvation — offloaded Milvus vector search to `run_in_executor()`
+- Eliminated 2–4s per-query latency by promoting SentenceTransformer (~400MB) to module-level singleton
+- Added `MAX_TOOL_DEPTH=3` recursion guard preventing stack overflow on multi-hop LLM tool calls
+- Fixed `ZeroDivisionError` crashes in both standard and incremental KFP chunking pipelines
+
+**RuxaiLab — sentiment-analysis-api & facial-sentiment-analysis-api** `Flask · TensorFlow · OpenCV` — 6 PRs Open *(Feb 2026–Present)*
+- Fixed malformed `logger.debug()` f-string calls silently dropping debug output; added 2 new `remove_audio` branch tests
+- Fixed whitespace-only text bypassing input validation, reaching the ML model with no error returned
+- Fixed `ZeroDivisionError` in MVP pipeline on empty prediction arrays; wired dynamic CLI video path into `cv2.VideoCapture()`
+
+**GFOSS — ORION CubeSat Edge AI Payload** `YOLOv8 · Eclipse Zenoh · Jetson` *(Feb 2026–Present)*
+- Architected live YOLOv8 computer vision pipeline on NVIDIA Jetson at 30+ FPS
+- Engineered async Pub/Sub middleware via Eclipse Zenoh + Pydantic with 3.5ms telemetry latency on x86
 
 ---
 
@@ -56,6 +76,7 @@ My work lives in two worlds: getting deep learning models to run on hardware wit
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=c%2B%2B&logoColor=white)
 ![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnubash&logoColor=white)
 
 **Robotics & Edge**  
 ![ROS 2](https://img.shields.io/badge/ROS_2-22314E?style=flat&logo=ros&logoColor=white)
@@ -83,8 +104,10 @@ My work lives in two worlds: getting deep learning models to run on hardware wit
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white)
+![Milvus](https://img.shields.io/badge/Milvus-00A1EA?style=flat&logoColor=white)
 ![n8n](https://img.shields.io/badge/n8n-FF6D5A?style=flat&logo=n8n&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
+![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=flat&logoColor=white)
 
 **DevOps & Infra**  
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
