@@ -31,9 +31,9 @@ My work lives in two worlds: getting deep learning models to run on hardware wit
 
 | Organisation | Repository | Contribution | Status | Period |
 |---|---|---|---|---|
-| JdeRobot | Robotics Academy | FP16 crash fix, HAL refactor, deployment script fixes, 35 unit tests | 7 PRs Merged | Feb 2026–Present |
-| Kubeflow / CNCF | docs-agent | Asyncio event loop fix, SentenceTransformer singleton, KFP pipeline crash fixes | 6 PRs Open | Mar 2026–Present |
-| RuxaiLab | sentiment-analysis-api · facial-sentiment-analysis-api | Logger bug fixes, input validation, ZeroDivisionError fix, test coverage | 6 PRs Open | Feb 2026–Present |
+| JdeRobot | Robotics Academy | Fixed FP16 precision crash in Object Detection pipeline; refactored HAL memory identity checks resolving 100+ linter warnings; fixed broken `getopts`, Docker Compose V2 detection & `curl` error handling in deployment scripts; added 35 unit tests across 5 test classes | 7 PRs Merged | Feb 2026–Present |
+| Kubeflow / CNCF | docs-agent | Resolved 10.14s asyncio event loop starvation by offloading Milvus vector search to `run_in_executor()`; eliminated 2–4s per-query latency by promoting SentenceTransformer to module-level singleton; added `MAX_TOOL_DEPTH` recursion guard; fixed `ZeroDivisionError` in KFP chunking pipelines | 6 PRs Open | Mar 2026–Present |
+| RuxaiLab | sentiment-analysis-api · facial-sentiment-analysis-api | Fixed malformed `logger.debug()` f-string calls silently dropping debug output; fixed whitespace-only input bypassing ML model validation; fixed `ZeroDivisionError` on empty prediction arrays in MVP pipeline; added branch test coverage for untested `remove_audio` path | 6 PRs Open | Feb 2026–Present |
 
 ---
 
