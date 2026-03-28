@@ -9,6 +9,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/kunal-somani-227373344)
 [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:kunal120222@gmail.com)
+[![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@kunal120222)
 
 </div>
 
@@ -16,14 +17,13 @@
 
 ## About Me
 
-I'm a pre-final year undergrad pursuing a rare dual degree in **Robotics & AI** (Thapar) and **Data Science** (IIT Madras), working at the intersection of physical systems and machine intelligence.
+Pre-final year undergrad at the intersection of robotics, computer vision, and autonomous systems. I build things that actually work on hardware — multimodal ML pipelines, edge AI systems, agentic backends, and production-grade open-source contributions.
 
-My work lives in two worlds: getting deep learning models to run on hardware with real-time constraints, and building AI agents that think, route, and act autonomously. I care about systems that are not just intelligent in theory, but that actually work when deployed — on edge devices, in production APIs, and in open-source codebases.
-
-- **Research:** Built an IoT + voice multimodal pipeline for early Parkinson's detection (>95% classification accuracy)
-- **Robotics:** Engineered HIL testing and kinematic control systems for 2 custom robots at MARS Society
-- **Open Source:** 7 merged PRs at **JdeRobot**; active contributions at **Kubeflow/CNCF**, **RuxaiLab**, and **GFOSS**
-- **Focus:** Edge AI deployment, LLM-driven autonomous agents, ROS 2 middleware, and production RAG architectures
+- **Research:** Multimodal CNN+DNN for Parkinson's early detection — improved combined model accuracy from 88% to 91%+ *(Thapar ELC, Summer 2025)*
+- **Open Source:** 7 merged PRs at JdeRobot; active contributions at Kubeflow/CNCF and RuxaiLab — GSoC 2026 applicant at all three
+- **CV/ML:** Toll Fraud Detection system — 24K+ images, 97% accuracy on multi-axle trucks *(Medium article published)*
+- **Robotics Research:** Audio-Visual-Thermal fusion for autonomous SAR under Dr. Ankit Soni, Thapar — using Isaac Sim + ROS 2 Humble
+- **Capstone:** Canary Rover — autonomous mine inspection robot with SLAM, RL navigation, crack detection, and gas leak sensing
 
 ---
 
@@ -31,9 +31,9 @@ My work lives in two worlds: getting deep learning models to run on hardware wit
 
 | Organisation | Repository | Contribution | Status | Period |
 |---|---|---|---|---|
-| JdeRobot | Robotics Academy | Fixed FP16 precision crash in Object Detection pipeline; refactored HAL memory identity checks resolving 100+ linter warnings; fixed broken `getopts`, Docker Compose V2 detection & `curl` error handling in deployment scripts; added 35 unit tests across 5 test classes | 7 PRs Merged | Feb 2026–Present |
-| Kubeflow / CNCF | docs-agent | Resolved 10.14s asyncio event loop starvation by offloading Milvus vector search to `run_in_executor()`; eliminated 2–4s per-query latency by promoting SentenceTransformer to module-level singleton; added `MAX_TOOL_DEPTH` recursion guard; fixed `ZeroDivisionError` in KFP chunking pipelines | 6 PRs Open | Mar 2026–Present |
-| RuxaiLab | sentiment-analysis-api · facial-sentiment-analysis-api | Fixed malformed `logger.debug()` f-string calls silently dropping debug output; fixed whitespace-only input bypassing ML model validation; fixed `ZeroDivisionError` on empty prediction arrays in MVP pipeline; added branch test coverage for untested `remove_audio` path | 6 PRs Open | Feb 2026–Present |
+| JdeRobot | Robotics Academy | FP16 crash fix, HAL refactor, deployment script fixes (getopts, Docker Compose V2, preflight checks), 42 unit tests, docstrings across 4 backend modules | 10 PRs Merged | Feb 2026–Present |
+| Kubeflow / CNCF | docs-agent | Fixed 10.14s asyncio event loop starvation via `run_in_executor()`; eliminated 2–4s per-query latency with SentenceTransformer singleton; `MAX_TOOL_DEPTH` recursion guard; `ZeroDivisionError` fixes in KFP chunking pipelines | 6 PRs Open | Mar 2026–Present |
+| RuxaiLab | sentiment-analysis-api · facial-sentiment-analysis-api | Centralized logger factory; f-string anti-pattern fixes in audio/transcript services; whitespace-only input bypassing ML model validation; `ZeroDivisionError` fix in MVP pipeline; dynamic CLI video loading | 6 PRs Open | Feb 2026–Present |
 
 ---
 
@@ -41,10 +41,23 @@ My work lives in two worlds: getting deep learning models to run on hardware wit
 
 | Project | Description | Stack |
 |---|---|---|
-| [**Axon Core**](https://github.com/Kunal-Somani/axon-core) | Unified multi-modal intelligence API with dynamic LLM routing across 3 specialized processing units (RAG, tool-use, conversational). Dual voice/text client with human-in-the-loop execution handshake for secure system commands. | FastAPI · LangChain · FAISS · Ollama · Gemini |
-| [**Financial Analyst Agent**](https://github.com/Kunal-Somani/financial-analyst-agent) | Dual-tool agentic system with dynamic reasoning to select between a custom SQL executor and a PGVector RAG retriever. Delivers synthesized summaries to Telegram via live API integration. | n8n · Gemini 2.5 Pro · PostgreSQL · pgvector · Docker |
-| [**its-ok-gemini**](https://github.com/Kunal-Somani/its-ok-gemini) | Autonomous SDLC agent that interprets a task brief, generates full application code via LLM, creates a GitHub repo, and deploys it live to GitHub Pages — including iterative code revision rounds. | FastAPI · Gemini API · GitPython · Docker · GitHub API |
-| [**Autonomous Agent Portfolio**](https://github.com/Kunal-Somani/n8n-agents-project) | Suite of 4 autonomous agents handling CI/CD GitHub triage, scheduled research synthesis, live sentiment analysis, and structured data extraction with just-in-time RAG and XML/JSON pipeline management. | n8n · Gemini Flash · Ollama · REST APIs |
+| [**Axon Core**](https://github.com/Kunal-Somani/axon-core) | Unified multi-modal intelligence API with dynamic LLM routing across 3 processing units — RAG via FAISS+Ollama, tool-use via Gemini, and general chat. Step-Back Query Generation for hallucination reduction. Secure execution handshake requiring user confirmation before subprocess calls. | FastAPI · LangChain · FAISS · Ollama · Gemini |
+| [**its-ok-gemini**](https://github.com/Kunal-Somani/its-ok-gemini) | Autonomous SDLC agent — receives a natural language task brief, generates full application code via LLM, creates a GitHub repo, and deploys live to GitHub Pages without human intervention. Handles iterative revision rounds by cloning its own deployed code and making surgical updates. | FastAPI · Gemini API · GitPython · Docker · GitHub API |
+| [**Financial Analyst Agent**](https://github.com/Kunal-Somani/financial-analyst-agent) | Dual-tool agentic system with dynamic reasoning to select between a custom SQL executor and a PGVector RAG retriever. Synthesized results delivered to Telegram via live API integration. | n8n · Gemini 2.5 Pro · PostgreSQL · pgvector · Docker |
+| [**Autonomous Agent Portfolio**](https://github.com/Kunal-Somani/n8n-agents-project) | 4 autonomous agents — GitHub issue triage, scheduled ArXiv research digest, live Hacker News sentiment analysis with per-story just-in-time RAG, and unstructured-text-to-Google-Sheets extraction. Handles 500+ items and 25+ API calls per run with strict schema enforcement. | n8n · Gemini Flash · Ollama · REST APIs |
+| [**LLM Quiz Solver**](https://github.com/Kunal-Somani/llm-quiz-solver) | Recursive multi-agent system with dynamic DOM analysis via Playwright, JIT Python code synthesis via LLM, and multi-step traversal with state maintained across authentication boundaries. Deployed on Render via Docker. | FastAPI · GPT-4o · Playwright · Docker |
+| [**Toll Fraud Detection**](https://github.com/Kunal-Somani/tiet-ucs532p-bteam) | Classical CV pipeline for detecting fake FASTag usage at toll plazas. 24K+ images, 3780-dim HOG feature vectors, LinearSVC — 97% accuracy on multi-axle trucks. Dataset collection, labeling, and model training phases complete. | OpenCV · scikit-learn · HOG · LinearSVC |
+
+---
+
+## Active Research & Projects
+
+| Project | Description | Status |
+|---|---|---|
+| Audio-Visual-Thermal SAR | Multimodal fusion architecture for autonomous search & rescue in visually degraded environments. Fusing 3 modalities for robust SLAM and object detection. | Ongoing — under Dr. Ankit Soni, Thapar |
+| Canary Rover | Autonomous mine inspection rover — crack detection, gas leak sensing, dust suppression, anti-theft GPS, SLAM via RPLiDAR+IMU, RL-trained navigation, spark-proof body. Hardware in build phase. | Ongoing — Capstone |
+| Brain & Knee MRI Reconstruction | AI architecture to accelerate MRI scan result generation, replacing slow mathematical-only methods. | In progress |
+| AI Assistant (RAGless) | Multimodal personal AI assistant exploring Mamba and beyond-transformer architectures to replace FAISS/RAG+LLM approach. Speech, text, and document modes. | In progress |
 
 ---
 
@@ -60,6 +73,7 @@ My work lives in two worlds: getting deep learning models to run on hardware wit
 **Robotics & Edge**  
 ![ROS 2](https://img.shields.io/badge/ROS_2-22314E?style=flat&logo=ros&logoColor=white)
 ![NVIDIA Jetson](https://img.shields.io/badge/NVIDIA_Jetson-76B900?style=flat&logo=nvidia&logoColor=white)
+![Isaac Sim](https://img.shields.io/badge/Isaac_Sim-76B900?style=flat&logo=nvidia&logoColor=white)
 ![Gazebo](https://img.shields.io/badge/Gazebo-FF6600?style=flat&logoColor=white)
 ![Eclipse Zenoh](https://img.shields.io/badge/Eclipse_Zenoh-2C2255?style=flat&logoColor=white)
 ![MATLAB](https://img.shields.io/badge/MATLAB-D97615?style=flat&logo=mathworks&logoColor=white)
@@ -76,7 +90,7 @@ My work lives in two worlds: getting deep learning models to run on hardware wit
 ![Scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat&logoColor=white)
+![Librosa](https://img.shields.io/badge/Librosa-000000?style=flat&logoColor=white)
 ![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat&logo=plotly&logoColor=white)
 
 **Backend & Databases**  
@@ -95,7 +109,6 @@ My work lives in two worlds: getting deep learning models to run on hardware wit
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)
-![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat&logo=cloudflare&logoColor=white)
 ![Anaconda](https://img.shields.io/badge/Anaconda-44A833?style=flat&logo=anaconda&logoColor=white)
 
 ---
@@ -109,13 +122,5 @@ My work lives in two worlds: getting deep learning models to run on hardware wit
 ![Streak Stats](https://nirzak-streak-stats.vercel.app/?user=Kunal-Somani&theme=dark&hide_border=true)
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Kunal-Somani&theme=dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact)
-
-</div>
-
----
-
-<div align="center">
-
-*Currently exploring: NVIDIA Isaac Sim · Advanced RAG architectures · Kubernetes orchestration*
 
 </div>
