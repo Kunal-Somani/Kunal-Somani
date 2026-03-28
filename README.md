@@ -20,7 +20,7 @@
 Pre-final year undergrad at the intersection of robotics, computer vision, and autonomous systems. I build things that actually work on hardware — multimodal ML pipelines, edge AI systems, agentic backends, and production-grade open-source contributions.
 
 - **Research:** Multimodal CNN+DNN for Parkinson's early detection — improved combined model accuracy from 88% to 91%+ *(Thapar ELC, Summer 2025)*
-- **Open Source:** 7 merged PRs at JdeRobot; active contributions at Kubeflow/CNCF and RuxaiLab — GSoC 2026 applicant at all three
+- **Open Source:** 10 merged PRs at JdeRobot; active contributions at Kubeflow/CNCF and RuxaiLab — GSoC 2026 applicant at all three
 - **CV/ML:** Toll Fraud Detection system — 24K+ images, 97% accuracy on multi-axle trucks *(Medium article published)*
 - **Robotics Research:** Audio-Visual-Thermal fusion for autonomous SAR under Dr. Ankit Soni, Thapar — using Isaac Sim + ROS 2 Humble
 - **Capstone:** Canary Rover — autonomous mine inspection robot with SLAM, RL navigation, crack detection, and gas leak sensing
