@@ -20,7 +20,7 @@
 Pre-final year undergrad at the intersection of robotics, computer vision, and autonomous systems. I build things that actually work on hardware — multimodal ML pipelines, edge AI systems, agentic backends, and production-grade open-source contributions.
 
 - **Research:** Multimodal CNN+DNN for Parkinson's early detection — improved combined model accuracy from 88% to 91%+ *(Thapar ELC, Summer 2025)*
-- **Open Source:** 10 merged PRs at JdeRobot; active contributions at Kubeflow/CNCF and RuxaiLab — GSoC 2026 applicant at all three
+- **Open Source:** 10 merged PRs and Core-contributor at JdeRobot; active contributions at Kubeflow/CNCF and RuxaiLab — GSoC 2026 applicant at all three
 - **CV/ML:** Toll Fraud Detection system — 24K+ images, 97% accuracy on multi-axle trucks *(Medium article published)*
 - **Robotics Research:** Audio-Visual-Thermal fusion for autonomous SAR under Dr. Ankit Soni, Thapar — using Isaac Sim + ROS 2 Humble
 - **Capstone:** Canary Rover — autonomous mine inspection robot with SLAM, RL navigation, crack detection, and gas leak sensing
@@ -31,7 +31,7 @@ Pre-final year undergrad at the intersection of robotics, computer vision, and a
 
 | Organisation | Repository | Contribution | Status | Period |
 |---|---|---|---|---|
-| JdeRobot | Robotics Academy | FP16 crash fix, HAL refactor, deployment script fixes (getopts, Docker Compose V2, preflight checks), 42 unit tests, docstrings across 4 backend modules | 10 PRs Merged | Feb 2026–Present |
+| JdeRobot | Robotics Academy | HAL refactor, deployment script fixes (getopts, Docker Compose V2, preflight checks), 42 unit tests, docstrings across 4 backend modules | 10 PRs Merged | Feb 2026–Present |
 | Kubeflow / CNCF | docs-agent | Fixed 10.14s asyncio event loop starvation via `run_in_executor()`; eliminated 2–4s per-query latency with SentenceTransformer singleton; `MAX_TOOL_DEPTH` recursion guard; `ZeroDivisionError` fixes in KFP chunking pipelines | 6 PRs Open | Mar 2026–Present |
 | RuxaiLab | sentiment-analysis-api · facial-sentiment-analysis-api | Centralized logger factory; f-string anti-pattern fixes in audio/transcript services; whitespace-only input bypassing ML model validation; `ZeroDivisionError` fix in MVP pipeline; dynamic CLI video loading | 6 PRs Open | Feb 2026–Present |
 
