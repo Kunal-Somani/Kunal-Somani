@@ -5,11 +5,10 @@
 ### Robotics & AI · Edge Intelligence · Autonomous Agents
 
 **B.E. Robotics & AI** — Thapar Institute of Engineering & Technology  
-**B.S. Data Science & Applications** — IIT Madras
+**B.S. Data Science & Applications** — Indian Institute of Technology Madras
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/kunal-somani-227373344)
 [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:kunal120222@gmail.com)
-[![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@kunal120222)
 
 </div>
 
@@ -20,7 +19,7 @@
 Pre-final year undergrad at the intersection of robotics, computer vision, and autonomous systems. I build things that actually work on hardware — multimodal ML pipelines, edge AI systems, agentic backends, and production-grade open-source contributions.
 
 - **Research:** Multimodal CNN+DNN for Parkinson's early detection — improved combined model accuracy from 88% to 91%+ *(Thapar ELC, Summer 2025)*
-- **Open Source:** 10 merged PRs and Core-contributor at JdeRobot; active contributions at Kubeflow/CNCF and RuxaiLab — GSoC 2026 applicant at all three
+- **Open Source:** Core-contributor at JdeRobot with 12 merged PRs; active contributions at Kubeflow/CNCF and RuxaiLab
 - **CV/ML:** Toll Fraud Detection system — 24K+ images, 97% accuracy on multi-axle trucks *(Medium article published)*
 - **Robotics Research:** Audio-Visual-Thermal fusion for autonomous SAR under Dr. Ankit Soni, Thapar — using Isaac Sim + ROS 2 Humble
 - **Capstone:** Canary Rover — autonomous mine inspection robot with SLAM, RL navigation, crack detection, and gas leak sensing
@@ -31,8 +30,8 @@ Pre-final year undergrad at the intersection of robotics, computer vision, and a
 
 | Organisation | Repository | Contribution | Status | Period |
 |---|---|---|---|---|
-| JdeRobot | Robotics Academy | HAL refactor, deployment script fixes (getopts, Docker Compose V2, preflight checks), 42 unit tests, docstrings across 4 backend modules | 10 PRs Merged | Feb 2026–Present |
-| Kubeflow / CNCF | docs-agent | Fixed 10.14s asyncio event loop starvation via `run_in_executor()`; eliminated 2–4s per-query latency with SentenceTransformer singleton; `MAX_TOOL_DEPTH` recursion guard; `ZeroDivisionError` fixes in KFP chunking pipelines | 6 PRs Open | Mar 2026–Present |
+| JdeRobot | Robotics Academy | Fixed `BumperNode` unnecessary variable assignment, HAL refactor, deployment script fixes (getopts, Docker Compose V2, preflight checks), removed duplicate `detection_network.py`, 52 unit tests, docstrings across 4 backend modules | 12 PRs Merged | Feb 2026–Present |
+| Kubeflow / CNCF | docs-agent | Fixed 10.14s asyncio event loop starvation via `run_in_executor()`; eliminated 2–4s per-query latency with SentenceTransformer singleton; `MAX_TOOL_DEPTH` recursion guard; `ZeroDivisionError` fixes in KFP chunking pipelines | 6 PRs Open | Feb 2026–Present |
 | RuxaiLab | sentiment-analysis-api · facial-sentiment-analysis-api | Centralized logger factory; f-string anti-pattern fixes in audio/transcript services; whitespace-only input bypassing ML model validation; `ZeroDivisionError` fix in MVP pipeline; dynamic CLI video loading | 6 PRs Open | Feb 2026–Present |
 
 ---
@@ -46,7 +45,7 @@ Pre-final year undergrad at the intersection of robotics, computer vision, and a
 | [**Financial Analyst Agent**](https://github.com/Kunal-Somani/financial-analyst-agent) | Dual-tool agentic system with dynamic reasoning to select between a custom SQL executor and a PGVector RAG retriever. Synthesized results delivered to Telegram via live API integration. | n8n · Gemini 2.5 Pro · PostgreSQL · pgvector · Docker |
 | [**Autonomous Agent Portfolio**](https://github.com/Kunal-Somani/n8n-agents-project) | 4 autonomous agents — GitHub issue triage, scheduled ArXiv research digest, live Hacker News sentiment analysis with per-story just-in-time RAG, and unstructured-text-to-Google-Sheets extraction. Handles 500+ items and 25+ API calls per run with strict schema enforcement. | n8n · Gemini Flash · Ollama · REST APIs |
 | [**LLM Quiz Solver**](https://github.com/Kunal-Somani/llm-quiz-solver) | Recursive multi-agent system with dynamic DOM analysis via Playwright, JIT Python code synthesis via LLM, and multi-step traversal with state maintained across authentication boundaries. Deployed on Render via Docker. | FastAPI · GPT-4o · Playwright · Docker |
-| [**Toll Fraud Detection**](https://github.com/Kunal-Somani/tiet-ucs532p-bteam) | Classical CV pipeline for detecting fake FASTag usage at toll plazas. 24K+ images, 3780-dim HOG feature vectors, LinearSVC — 97% accuracy on multi-axle trucks. Dataset collection, labeling, and model training phases complete. | OpenCV · scikit-learn · HOG · LinearSVC |
+| [**Toll Fraud Detection**](https://github.com/Kunal-Somani/tiet-ucs532p-bteam) | Classical CV pipeline for detecting fake FASTag usage at toll plazas. 24K+ images, 3780-dim HOG feature vectors, LinearSVC — 97% accuracy on multi-axle trucks. | OpenCV · scikit-learn · HOG · LinearSVC |
 
 ---
 
@@ -117,10 +116,18 @@ Pre-final year undergrad at the intersection of robotics, computer vision, and a
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Kunal-Somani&theme=dark&hide_border=true&include_all_commits=true&count_private=true)
+[![GitHub Stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=Kunal-Somani&theme=dark&hide_border=true&include_all_commits=true&count_private=true)](https://github.com/Kunal-Somani)
 
-![Streak Stats](https://nirzak-streak-stats.vercel.app/?user=Kunal-Somani&theme=dark&hide_border=true)
+[![Streak Stats](https://nirzak-streak-stats.vercel.app/?user=Kunal-Somani&theme=dark&hide_border=true)](https://github.com/Kunal-Somani)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Kunal-Somani&theme=dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact)
+[![Top Languages](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=Kunal-Somani&theme=dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact)](https://github.com/Kunal-Somani)
+
+</div>
+
+---
+
+<div align="center">
+
+*Currently exploring: NVIDIA Isaac Sim · Advanced RAG architectures · Kubernetes orchestration*
 
 </div>
