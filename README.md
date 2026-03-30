@@ -116,9 +116,9 @@ Pre-final year undergrad at the intersection of robotics, computer vision, and a
 
 <div align="center">
 
-[![Streak Stats](https://nirzak-streak-stats.vercel.app/?user=Kunal-Somani&theme=dark&hide_border=true)](https://github.com/Kunal-Somani)
-
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Kunal-Somani&theme=react-dark&hide_border=true)](https://github.com/Kunal-Somani)
+![](https://komarev.com/ghpvc/?username=Kunal-Somani&label=Profile+Views&color=0e75b6&style=flat)
+&nbsp;
+![](https://img.shields.io/github/followers/Kunal-Somani?label=Followers&style=flat&color=0e75b6)
 
 </div>
 
