@@ -23,16 +23,6 @@ Pre-final year undergrad at the intersection of robotics, computer vision, and a
 
 ---
 
-## Open-Source Contributions
-
-| Organisation | Repository | Contribution | Status | Period |
-|---|---|---|---|---|
-| JdeRobot | Robotics Academy | Fixed `BumperNode` unnecessary variable assignment, HAL refactor, deployment script fixes (getopts, Docker Compose V2, preflight checks), removed duplicate `detection_network.py`, 52 unit tests, docstrings across 4 backend modules | 16 PRs Merged | Feb 2026–Present |
-| Kubeflow / CNCF | docs-agent | Fixed 10.14s asyncio event loop starvation via `run_in_executor()`; eliminated 2–4s per-query latency with SentenceTransformer singleton; `MAX_TOOL_DEPTH` recursion guard; `ZeroDivisionError` fixes in KFP chunking pipelines | 6 PRs Open | Feb 2026–Present |
-| RuxaiLab | sentiment-analysis-api · facial-sentiment-analysis-api | Centralized logger factory; f-string anti-pattern fixes in audio/transcript services; whitespace-only input bypassing ML model validation; `ZeroDivisionError` fix in MVP pipeline; dynamic CLI video loading | 6 PRs Open | Feb 2026–Present |
-
----
-
 ## Featured Projects
 
 | Project | Description | Stack |
