@@ -4,8 +4,11 @@
 
 ### Robotics & AI · Edge Intelligence · Autonomous Agents
 
-**B.E. Robotics & Artificial Intelligence** — Thapar Institute of Engineering & Technology  
-**B.S. Data Science & Applications** — Indian Institute of Technology Madras
+**B.E. Robotics & Artificial Intelligence**, Thapar Institute of Engineering & Technology  
+**B.S. Data Science & Applications**, Indian Institute of Technology Madras
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/kunal-somani-227373344)
+[![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:kunal120222@gmail.com)
 
 </div>
 
@@ -15,8 +18,8 @@
 
 Pre-final year undergrad at the intersection of robotics, computer vision, and autonomous systems. I build things that actually work on hardware — multimodal ML pipelines, edge AI systems, agentic backends, and production-grade open-source contributions.
 
+- **Open Source:** Merged contributor at **JdeRobot/RoboticsAcademy** with 16 PRs — fixed deployment script bugs in `run_academy.sh` and `develop_academy.sh`, refactored the Hardware Abstraction Layer, resolved an FP16 precision crash in the Object Detection pipeline, and added 52 unit tests across 5 test classes
 - **Research:** Multimodal CNN+DNN for Parkinson's early detection — improved combined model accuracy from 88% to 91%+ *(Thapar ELC, Summer 2025)*
-- **Open Source:** Core-contributor at JdeRobot with 16 merged PRs; active contributions at Kubeflow/CNCF and RuxaiLab
 - **CV/ML:** Toll Fraud Detection system — 24K+ images, 97% accuracy on multi-axle trucks *(Medium article published)*
 - **Robotics Research:** Audio-Visual-Thermal fusion for autonomous SAR under Dr. Ankit Soni, Thapar — using Isaac Sim + ROS 2 Humble
 - **Capstone:** Canary Rover — autonomous mine inspection robot with SLAM, RL navigation, crack detection, and gas leak sensing
@@ -27,6 +30,7 @@ Pre-final year undergrad at the intersection of robotics, computer vision, and a
 
 | Project | Description | Stack |
 |---|---|---|
+| [**Parkinson's Early Detection**](https://github.com/eshaansingla/ParkinsonsEarlyPrediction) | Multimodal early detection system fusing MPU9250 IMU tremor signals and voice recordings. CNN for voice (88% accuracy) + DNN for tremor, combined via late fusion weighting — achieving 91% accuracy. Built custom data collection pipeline from ESP32 hardware to model inference. | TensorFlow · Keras · Librosa · Parselmouth · scikit-learn |
 | [**Axon Core**](https://github.com/Kunal-Somani/axon-core) | Unified multi-modal intelligence API with dynamic LLM routing across 3 processing units — RAG via FAISS+Ollama, tool-use via Gemini, and general chat. Step-Back Query Generation for hallucination reduction. Secure execution handshake requiring user confirmation before subprocess calls. | FastAPI · LangChain · FAISS · Ollama · Gemini |
 | [**its-ok-gemini**](https://github.com/Kunal-Somani/its-ok-gemini) | Autonomous SDLC agent — receives a natural language task brief, generates full application code via LLM, creates a GitHub repo, and deploys live to GitHub Pages without human intervention. Handles iterative revision rounds by cloning its own deployed code and making surgical updates. | FastAPI · Gemini API · GitPython · Docker · GitHub API |
 | [**Financial Analyst Agent**](https://github.com/Kunal-Somani/financial-analyst-agent) | Dual-tool agentic system with dynamic reasoning to select between a custom SQL executor and a PGVector RAG retriever. Synthesized results delivered to Telegram via live API integration. | n8n · Gemini 2.5 Pro · PostgreSQL · pgvector · Docker |
@@ -40,7 +44,7 @@ Pre-final year undergrad at the intersection of robotics, computer vision, and a
 | Project | Description | Status |
 |---|---|---|
 | Audio-Visual-Thermal SAR | Multimodal fusion architecture for autonomous search & rescue in visually degraded environments. Fusing 3 modalities for robust SLAM and object detection. | Ongoing — under Dr. Ankit Soni, Thapar |
-| Canary Rover | Autonomous mine inspection rover — crack detection, gas leak sensing, dust suppression, anti-theft GPS, SLAM via RPLiDAR+IMU, RL-trained navigation, spark-proof body. Hardware in build phase. | Ongoing — Capstone |
+| Canary Rover | Autonomous mine inspection rover — crack detection, gas leak sensing, dust suppression, anti-theft GPS, SLAM via RPLiDAR+IMU, RL-trained navigation, spark-proof body. Prototype design and model training phase. Collaborating in a team of 5. | Ongoing — Capstone |
 | Brain & Knee MRI Reconstruction | AI architecture to accelerate MRI scan result generation, replacing slow mathematical-only methods. | In progress |
 | AI Assistant (RAGless) | Multimodal personal AI assistant exploring Mamba and beyond-transformer architectures to replace FAISS/RAG+LLM approach. Speech, text, and document modes. | In progress |
 
@@ -102,9 +106,11 @@ Pre-final year undergrad at the intersection of robotics, computer vision, and a
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats-eight-theta.vercel.app/api?username=Kunal-Somani&theme=dark&hide_border=true&include_all_commits=true&count_private=true)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Kunal-Somani&theme=dark&hide_border=true&include_all_commits=true&count_private=true)
 
-![Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=Kunal-Somani&theme=dark&hide_border=true)
+![Streak Stats](https://nirzak-streak-stats.vercel.app/?user=Kunal-Somani&theme=dark&hide_border=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Kunal-Somani&theme=dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact)
 
 </div>
 
