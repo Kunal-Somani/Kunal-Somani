@@ -1,11 +1,9 @@
 <div align="center">
 
-# Kunal
+# Kunal Somani
 
-### Robotics & AI · Edge Intelligence · Autonomous Agents
-
-**B.E. Robotics & Artificial Intelligence**, Thapar Institute of Engineering & Technology  
-**B.S. Data Science & Applications**, Indian Institute of Technology Madras
+**B.E. Robotics & Artificial Intelligence** — Thapar Institute of Engineering & Technology  
+**B.S. Data Science & Applications** — Indian Institute of Technology Madras
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/kunal-somani-227373344)
 [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:kunal120222@gmail.com)
@@ -14,15 +12,15 @@
 
 ---
 
-## About Me
+Pre-final year undergrad working at the intersection of robotics, computer vision, and autonomous systems. I build things that run on actual hardware — multimodal ML pipelines, edge AI systems, agentic backends, and production-grade open-source tooling.
 
-Pre-final year undergrad at the intersection of robotics, computer vision, and autonomous systems. I build things that actually work on hardware — multimodal ML pipelines, edge AI systems, agentic backends, and production-grade open-source contributions.
+**Open Source:** Merged contributor at JdeRobot/RoboticsAcademy with 16 PRs. Fixed deployment script bugs in `run_academy.sh` and `develop_academy.sh`, refactored the Hardware Abstraction Layer, resolved an FP16 precision crash in the Object Detection pipeline, and added 52 unit tests across 5 test classes.
 
-- **Open Source:** Merged contributor at **JdeRobot/RoboticsAcademy** with 16 PRs — fixed deployment script bugs in `run_academy.sh` and `develop_academy.sh`, refactored the Hardware Abstraction Layer, resolved an FP16 precision crash in the Object Detection pipeline, and added 52 unit tests across 5 test classes
-- **Research:** Multimodal CNN+DNN for Parkinson's early detection — improved combined model accuracy from 88% to 91%+ *(Thapar ELC, Summer 2025)*
-- **CV/ML:** Toll Fraud Detection system — 24K+ images, 97% accuracy on multi-axle trucks *(Medium article published)*
-- **Robotics Research:** Audio-Visual-Thermal fusion for autonomous SAR under Dr. Ankit Soni, Thapar — using Isaac Sim + ROS 2 Humble
-- **Capstone:** Canary Rover — autonomous mine inspection robot with SLAM, RL navigation, crack detection, and gas leak sensing
+**Research at Thapar ELC (Summer 2025):** Multimodal CNN+DNN for Parkinson's early detection. Fused MPU9250 tremor signals with voice recordings via late fusion, improving combined model accuracy from 88% to 91%.
+
+**Computer Vision:** Toll fraud detection system built on HOG features and LinearSVC. 24K+ images, 97% accuracy on multi-axle vehicle classification. Published writeup on Medium.
+
+**Robotics Research (ongoing):** Audio-Visual-Thermal fusion architecture for autonomous SAR in visually degraded environments, under Dr. Ankit Soni at Thapar, using Isaac Sim and ROS 2 Humble.
 
 ---
 
@@ -30,46 +28,51 @@ Pre-final year undergrad at the intersection of robotics, computer vision, and a
 
 | Project | Description | Stack |
 |---|---|---|
-| [**Parkinson's Early Detection**](https://github.com/eshaansingla/ParkinsonsEarlyPrediction) | Multimodal early detection system fusing MPU9250 IMU tremor signals and voice recordings. CNN for voice (88% accuracy) + DNN for tremor, combined via late fusion weighting — achieving 91% accuracy. Built custom data collection pipeline from ESP32 hardware to model inference. | TensorFlow · Keras · Librosa · Parselmouth · scikit-learn |
-| [**Axon Core**](https://github.com/Kunal-Somani/axon-core) | Unified multi-modal intelligence API with dynamic LLM routing across 3 processing units — RAG via FAISS+Ollama, tool-use via Gemini, and general chat. Step-Back Query Generation for hallucination reduction. Secure execution handshake requiring user confirmation before subprocess calls. | FastAPI · LangChain · FAISS · Ollama · Gemini |
-| [**its-ok-gemini**](https://github.com/Kunal-Somani/its-ok-gemini) | Autonomous SDLC agent — receives a natural language task brief, generates full application code via LLM, creates a GitHub repo, and deploys live to GitHub Pages without human intervention. Handles iterative revision rounds by cloning its own deployed code and making surgical updates. | FastAPI · Gemini API · GitPython · Docker · GitHub API |
-| [**Financial Analyst Agent**](https://github.com/Kunal-Somani/financial-analyst-agent) | Dual-tool agentic system with dynamic reasoning to select between a custom SQL executor and a PGVector RAG retriever. Synthesized results delivered to Telegram via live API integration. | n8n · Gemini 2.5 Pro · PostgreSQL · pgvector · Docker |
-| [**Autonomous Agent Portfolio**](https://github.com/Kunal-Somani/n8n-agents-project) | 4 autonomous agents — GitHub issue triage, scheduled ArXiv research digest, live Hacker News sentiment analysis with per-story just-in-time RAG, and unstructured-text-to-Google-Sheets extraction. Handles 500+ items and 25+ API calls per run with strict schema enforcement. | n8n · Gemini Flash · Ollama · REST APIs |
-| [**Toll Fraud Detection**](https://github.com/Kunal-Somani/tiet-ucs532p-bteam) | Classical CV pipeline for detecting fake FASTag usage at toll plazas. 24K+ images, 3780-dim HOG feature vectors, LinearSVC — 97% accuracy on multi-axle trucks. | OpenCV · scikit-learn · HOG · LinearSVC |
+| [Parkinson's Early Detection](https://github.com/eshaansingla/ParkinsonsEarlyPrediction) | Multimodal early detection fusing MPU9250 IMU tremor signals with voice recordings. CNN on extracted voice features (88% accuracy), DNN on tremor data — combined via late fusion weighting to reach 91%. Includes a custom ESP32 hardware data collection pipeline from sensor to model inference. | TensorFlow · Keras · Librosa · Parselmouth · scikit-learn · SoundDevice |
+| [Axon Core](https://github.com/Kunal-Somani/axon-core) | Tri-modal AI assistant with a Gemini-powered semantic router dispatching queries across three paths: personal knowledge retrieval via Qdrant and local Gemma, OS-level tool execution with a user confirmation handshake, and general conversation. Next.js frontend with a FastAPI orchestrator, fully containerized. | FastAPI · LangChain · Qdrant · Ollama · Gemini · Next.js · Docker · SQLAlchemy |
+| [its-ok-gemini](https://github.com/Kunal-Somani/its-ok-gemini) | Autonomous SDLC agent that takes a natural language brief, generates full application code via Gemini, creates a GitHub repository, and deploys to GitHub Pages without human intervention. Handles iterative revision rounds by cloning its own deployed code and applying surgical updates. Includes a Prometheus metrics layer, async task orchestration via background workers, and a WebSocket-based live status feed. | FastAPI · Gemini API · GitPython · Docker · GitHub API · SQLAlchemy · Alembic · Prometheus |
+| [LLM Quiz Solver](https://github.com/Kunal-Somani/llm-quiz-solver) | Recursive autonomous agent for dynamic data analysis. Playwright handles JS-heavy DOMs and client-side rendering, feeds extracted context to GPT-4o-mini for just-in-time Python code synthesis, and executes the generated code in a sandboxed environment. Implements multi-step recursive task traversal with authentication state preserved across the chain. | FastAPI · Playwright · GPT-4o-mini · Docker · Pandas · BeautifulSoup |
+| [Toll Fraud Detection](https://github.com/Kunal-Somani/tiet-ucs532p-bteam) | Classical CV pipeline for detecting fake FASTag usage at toll plazas. 3780-dimensional HOG feature vectors, LinearSVC trained on 24K+ images, 97% accuracy on multi-axle truck classification. Includes a cross-modal centroid tracker, misclassification error analysis, and a simulated audit pipeline. | OpenCV · scikit-learn · HOG · LinearSVC · Seaborn · Matplotlib |
 
 ---
 
-## Active Research & Projects
+## Active Research
 
 | Project | Description | Status |
 |---|---|---|
-| Audio-Visual-Thermal SAR | Multimodal fusion architecture for autonomous search & rescue in visually degraded environments. Fusing 3 modalities for robust SLAM and object detection. | Ongoing — under Dr. Ankit Soni, Thapar |
-| Canary Rover | Autonomous mine inspection rover — crack detection, gas leak sensing, dust suppression, anti-theft GPS, SLAM via RPLiDAR+IMU, RL-trained navigation, spark-proof body. Prototype design and model training phase. Collaborating in a team of 5. | Ongoing — Capstone |
-| Brain & Knee MRI Reconstruction | AI architecture to accelerate MRI scan result generation, replacing slow mathematical-only methods. | In progress |
-| AI Assistant (RAGless) | Multimodal personal AI assistant exploring Mamba and beyond-transformer architectures to replace FAISS/RAG+LLM approach. Speech, text, and document modes. | In progress |
+| [Canary Rover](https://github.com/Kunal-Somani/canary-rover) | Autonomous mine inspection rover. PPO-trained locomotion in PyBullet (200K timesteps), ROS 2 sensor nodes for IMU, LiDAR, and BLDC encoders, full 3D visual simulation in NVIDIA Isaac Sim 5.1 with live sensor feeds, and SLAM via slam_toolbox and RTAB-Map. Crack detection, gas leak sensing, spark-proof chassis. Team of 5. | Ongoing — Capstone |
+| [MRI Reconstruction](https://github.com/Kunal-Somani/MRI_Reconstruction) | Dual-branch physics-guided deep learning framework for accelerated MRI reconstruction. A learned gating network routes k-space information adaptively, removing the need for anatomy labels at inference. Achieves +1.78% SSIM over single-branch baselines at 112ms per inference and 302 GFLOPs on an RTX 4060. | Ongoing |
+| Audio-Visual-Thermal SAR | Multimodal fusion architecture for autonomous search and rescue in visually degraded environments. Three sensing modalities fused for robust SLAM and object detection, under Dr. Ankit Soni at Thapar. | Ongoing |
+| AI Personal Assistant | Multimodal personal assistant exploring Mamba and beyond-transformer architectures as an alternative to the standard FAISS/RAG+LLM pattern. Speech, text, and document input modes. | In progress |
 
 ---
 
 ## Tech Stack
 
-**Languages**  
+**Languages**
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=c%2B%2B&logoColor=white)
 ![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnubash&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
 
-**Robotics & Edge**  
+**Robotics & Edge**
 ![ROS 2](https://img.shields.io/badge/ROS_2-22314E?style=flat&logo=ros&logoColor=white)
 ![NVIDIA Jetson](https://img.shields.io/badge/NVIDIA_Jetson-76B900?style=flat&logo=nvidia&logoColor=white)
 ![Isaac Sim](https://img.shields.io/badge/Isaac_Sim-76B900?style=flat&logo=nvidia&logoColor=white)
+![PyBullet](https://img.shields.io/badge/PyBullet-306998?style=flat&logoColor=white)
+![Stable Baselines3](https://img.shields.io/badge/Stable_Baselines3-4B8BBE?style=flat&logoColor=white)
+![Gymnasium](https://img.shields.io/badge/Gymnasium-0052CC?style=flat&logoColor=white)
 ![Gazebo](https://img.shields.io/badge/Gazebo-FF6600?style=flat&logoColor=white)
 ![Eclipse Zenoh](https://img.shields.io/badge/Eclipse_Zenoh-2C2255?style=flat&logoColor=white)
 ![MATLAB](https://img.shields.io/badge/MATLAB-D97615?style=flat&logo=mathworks&logoColor=white)
 ![CUDA](https://img.shields.io/badge/CUDA-76B900?style=flat&logo=nvidia&logoColor=white)
 
-**AI & Computer Vision**  
+**AI & Computer Vision**
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=PyTorch&logoColor=white)
+![PyTorch Lightning](https://img.shields.io/badge/PyTorch_Lightning-792EE5?style=flat&logo=lightning&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=TensorFlow&logoColor=white)
 ![Keras](https://img.shields.io/badge/Keras-D00000?style=flat&logo=keras&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white)
@@ -79,19 +82,30 @@ Pre-final year undergrad at the intersection of robotics, computer vision, and a
 ![Scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
+![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=flat&logo=scipy&logoColor=white)
 ![Librosa](https://img.shields.io/badge/Librosa-000000?style=flat&logoColor=white)
+![Parselmouth](https://img.shields.io/badge/Parselmouth-512BD4?style=flat&logoColor=white)
+![einops](https://img.shields.io/badge/einops-FF6B6B?style=flat&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-4878CF?style=flat&logoColor=white)
 ![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat&logo=plotly&logoColor=white)
 
-**Backend & Databases**  
+**Backend & Databases**
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white)
-![Milvus](https://img.shields.io/badge/Milvus-00A1EA?style=flat&logoColor=white)
-![n8n](https://img.shields.io/badge/n8n-FF6D5A?style=flat&logo=n8n&logoColor=white)
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat&logoColor=white)
+![Alembic](https://img.shields.io/badge/Alembic-6BA3BE?style=flat&logoColor=white)
+![Qdrant](https://img.shields.io/badge/Qdrant-DC244C?style=flat&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat&logo=playwright&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=prometheus&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
 ![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=flat&logoColor=white)
+![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat&logo=pydantic&logoColor=white)
 
-**DevOps & Infra**  
+**DevOps & Infra**
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
@@ -111,10 +125,11 @@ Pre-final year undergrad at the intersection of robotics, computer vision, and a
 ![Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=Kunal-Somani&theme=dark&hide_border=true)
 
 </div>
+
 ---
 
 <div align="center">
 
-*Currently exploring: NVIDIA Isaac Sim · Advanced RAG architectures · Kubernetes orchestration*
+Currently exploring: Physics-guided deep learning for medical imaging · RL-based autonomous navigation · Beyond-transformer sequence architectures · Multimodal sensor fusion for SAR
 
 </div>
