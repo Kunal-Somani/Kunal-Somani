@@ -12,7 +12,7 @@
 
 ---
 
-Pre-final year undergrad working at the intersection of robotics, computer vision, and autonomous systems. I build things that run on actual hardware — multimodal ML pipelines, edge AI systems, agentic backends, and production-grade open-source tooling.
+Pre-final year undergrad working at the intersection of robotics, computer vision, and autonomous systems. I build things that run on actual hardware: multimodal ML pipelines, edge AI systems, agentic backends, and production-grade open-source tooling.
 
 **Open Source:** Merged contributor at JdeRobot/RoboticsAcademy with 16 PRs. Fixed deployment script bugs in `run_academy.sh` and `develop_academy.sh`, refactored the Hardware Abstraction Layer, resolved an FP16 precision crash in the Object Detection pipeline, and added 52 unit tests across 5 test classes.
 
@@ -28,7 +28,7 @@ Pre-final year undergrad working at the intersection of robotics, computer visio
 
 | Project | Description | Stack |
 |---|---|---|
-| [Parkinson's Early Detection](https://github.com/eshaansingla/ParkinsonsEarlyPrediction) | Multimodal early detection fusing MPU9250 IMU tremor signals with voice recordings. CNN on extracted voice features (88% accuracy), DNN on tremor data — combined via late fusion weighting to reach 91%. Includes a custom ESP32 hardware data collection pipeline from sensor to model inference. | TensorFlow · Keras · Librosa · Parselmouth · scikit-learn · SoundDevice |
+| [Parkinson's Early Detection](https://github.com/eshaansingla/ParkinsonsEarlyPrediction) | Multimodal early detection fusing MPU9250 IMU tremor signals with voice recordings. CNN on extracted voice features (88% accuracy), DNN on tremor data combined via late fusion weighting to reach 91%. Includes a custom ESP32 hardware data collection pipeline from sensor to model inference. | TensorFlow · Keras · Librosa · Parselmouth · scikit-learn · SoundDevice |
 | [Axon Core](https://github.com/Kunal-Somani/axon-core) | Tri-modal AI assistant with a Gemini-powered semantic router dispatching queries across three paths: personal knowledge retrieval via Qdrant and local Gemma, OS-level tool execution with a user confirmation handshake, and general conversation. Next.js frontend with a FastAPI orchestrator, fully containerized. | FastAPI · LangChain · Qdrant · Ollama · Gemini · Next.js · Docker · SQLAlchemy |
 | [its-ok-gemini](https://github.com/Kunal-Somani/its-ok-gemini) | Autonomous SDLC agent that takes a natural language brief, generates full application code via Gemini, creates a GitHub repository, and deploys to GitHub Pages without human intervention. Handles iterative revision rounds by cloning its own deployed code and applying surgical updates. Includes a Prometheus metrics layer, async task orchestration via background workers, and a WebSocket-based live status feed. | FastAPI · Gemini API · GitPython · Docker · GitHub API · SQLAlchemy · Alembic · Prometheus |
 | [LLM Quiz Solver](https://github.com/Kunal-Somani/llm-quiz-solver) | Recursive autonomous agent for dynamic data analysis. Playwright handles JS-heavy DOMs and client-side rendering, feeds extracted context to GPT-4o-mini for just-in-time Python code synthesis, and executes the generated code in a sandboxed environment. Implements multi-step recursive task traversal with authentication state preserved across the chain. | FastAPI · Playwright · GPT-4o-mini · Docker · Pandas · BeautifulSoup |
