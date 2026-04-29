@@ -1,6 +1,6 @@
 <div align="center">
 
-# Kunal Somani
+# Kunal
 
 **B.E. Robotics & Artificial Intelligence**, Thapar Institute of Engineering & Technology  
 **B.S. Data Science & Applications**, Indian Institute of Technology Madras
