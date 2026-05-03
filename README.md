@@ -12,15 +12,16 @@
 
 ---
 
-Pre-final year undergrad working at the intersection of robotics, computer vision, and autonomous systems. I build things that run on actual hardware: multimodal ML pipelines, edge AI systems, agentic backends, and production-grade open-source tooling.
+Pre-final year undergrad building at the intersection of robotics, computer vision, and autonomous systems. My work runs on real hardware and real infrastructure: multimodal ML pipelines, edge AI systems, agentic backends, and production-grade open-source tooling.
 
-**Open Source:** Merged contributor at JdeRobot/RoboticsAcademy with 16 PRs. Fixed deployment script bugs in `run_academy.sh` and `develop_academy.sh`, refactored the Hardware Abstraction Layer, resolved an FP16 precision crash in the Object Detection pipeline, and added 52 unit tests across 5 test classes.
 
-**Research at Thapar ELC (Summer 2025):** Multimodal CNN+DNN for Parkinson's early detection. Fused MPU9250 tremor signals with voice recordings via late fusion, improving combined model accuracy from 88% to 91%.
+**Open Source:** Active contributor at JdeRobot/RoboticsAcademy with 16 merged PRs. Resolved an FP16 precision crash in the Object Detection pipeline, fixed deployment script bugs across `run_academy.sh` and `develop_academy.sh`, refactored the Hardware Abstraction Layer, and shipped 52 unit tests across 5 test classes.
 
-**Computer Vision:** Toll fraud detection system built on HOG features and LinearSVC. 24K+ images, 97% accuracy on multi-axle vehicle classification. Published writeup on Medium.
+**Research at Thapar ELC (Summer 2025):** Multimodal CNN and DNN for Parkinson's early detection. Fused MPU9250 tremor signals with voice recordings via late fusion, pushing combined model accuracy from 88% to 91%.
 
-**Robotics Research (ongoing):** Audio-Visual-Thermal fusion architecture for autonomous SAR in visually degraded environments, under Dr. Ankit Soni at Thapar, using Isaac Sim and ROS 2 Humble.
+**Computer Vision:** Toll fraud detection system built on HOG features and LinearSVC. 24K+ images, 97% accuracy on multi-axle vehicle classification.
+
+**Robotics Research (ongoing):** Audio-Visual-Thermal fusion architecture for autonomous SAR navigation in visually degraded environments, under Dr. Ankit Soni at Thapar, using Isaac Sim and ROS 2.
 
 ---
 
@@ -28,11 +29,11 @@ Pre-final year undergrad working at the intersection of robotics, computer visio
 
 | Project | Description | Stack |
 |---|---|---|
-| [Parkinson's Early Detection](https://github.com/eshaansingla/ParkinsonsEarlyPrediction) | Multimodal early detection fusing MPU9250 IMU tremor signals with voice recordings. CNN on extracted voice features (88% accuracy), DNN on tremor data combined via late fusion weighting to reach 91%. Includes a custom ESP32 hardware data collection pipeline from sensor to model inference. | TensorFlow · Keras · Librosa · Parselmouth · scikit-learn · SoundDevice |
-| [Axon Core](https://github.com/Kunal-Somani/axon-core) | Tri-modal AI assistant with a Gemini-powered semantic router dispatching queries across three paths: personal knowledge retrieval via Qdrant and local Gemma, OS-level tool execution with a user confirmation handshake, and general conversation. Next.js frontend with a FastAPI orchestrator, fully containerized. | FastAPI · LangChain · Qdrant · Ollama · Gemini · Next.js · Docker · SQLAlchemy |
-| [its-ok-gemini](https://github.com/Kunal-Somani/its-ok-gemini) | Autonomous SDLC agent that takes a natural language brief, generates full application code via Gemini, creates a GitHub repository, and deploys to GitHub Pages without human intervention. Handles iterative revision rounds by cloning its own deployed code and applying surgical updates. Includes a Prometheus metrics layer, async task orchestration via background workers, and a WebSocket-based live status feed. | FastAPI · Gemini API · GitPython · Docker · GitHub API · SQLAlchemy · Alembic · Prometheus |
-| [LLM Quiz Solver](https://github.com/Kunal-Somani/llm-quiz-solver) | Recursive autonomous agent for dynamic data analysis. Playwright handles JS-heavy DOMs and client-side rendering, feeds extracted context to GPT-4o-mini for just-in-time Python code synthesis, and executes the generated code in a sandboxed environment. Implements multi-step recursive task traversal with authentication state preserved across the chain. | FastAPI · Playwright · GPT-4o-mini · Docker · Pandas · BeautifulSoup |
-| [Toll Fraud Detection](https://github.com/Kunal-Somani/tiet-ucs532p-bteam) | Classical CV pipeline for detecting fake FASTag usage at toll plazas. 3780-dimensional HOG feature vectors, LinearSVC trained on 24K+ images, 97% accuracy on multi-axle truck classification. Includes a cross-modal centroid tracker, misclassification error analysis, and a simulated audit pipeline. | OpenCV · scikit-learn · HOG · LinearSVC · Seaborn · Matplotlib |
+| [Archon](https://github.com/Kunal-Somani/archon) | Production-deployable instruction-to-deployment backend. Takes a natural language prompt, retrieves context via hybrid RAG (Cohere dense + BM25 sparse, RRF fusion), generates schema-validated code using Anthropic Tool Use, and pushes a live site to GitHub Pages via a GitHub App deployer with short-lived installation tokens. FastAPI and Celery orchestrate async task execution; Redis Pub/Sub streams live logs over WebSocket to a React and TypeScript dashboard; Prometheus, Grafana, and OpenTelemetry cover full observability. Full integration and unit test suite with pre-push hooks. | FastAPI - Celery - Redis - Cohere - Anthropic API - React - TypeScript - Vite - PostgreSQL - SQLAlchemy - Alembic - Prometheus - Grafana - OpenTelemetry - Docker |
+| [Parkinson's Early Detection](https://github.com/eshaansingla/ParkinsonsEarlyPrediction) | Multimodal early detection fusing MPU9250 IMU tremor signals with voice recordings. CNN on extracted voice features (88% accuracy), DNN on tremor data, combined via late fusion weighting to reach 91%. Includes a custom ESP32 hardware data collection pipeline from sensor to model inference. | TensorFlow - Keras - Librosa - Parselmouth - scikit-learn - SoundDevice |
+| [Axon Core](https://github.com/Kunal-Somani/axon-core) | Production-deployable fully local tri-modal AI assistant. A BART-MNLI zero-shot semantic router dispatches queries across three processing paths: personal knowledge retrieval via Qdrant and local Gemma, OS-level tool execution with user confirmation, and general conversation. Hybrid RAG with MiniLM dense retrieval and BM25 sparse, reranked by a cross-encoder. GBNF grammar-constrained sampling for tool calling. Next.js frontend with FastAPI orchestrator, fully containerized. | FastAPI - LangChain - Qdrant - Ollama - Next.js - Docker - SQLAlchemy |
+| [Helix](https://github.com/Kunal-Somani/helix-agent) | Production-deployable recursive autonomous web agent built on the OODA loop. Playwright handles JS-heavy DOMs, Claude Tool Use synthesizes a Python solution just-in-time, RestrictedPython and SIGALRM sandbox execution, and HTTP submission loops until a terminal state is reached. Durable async jobs via ARQ on Redis with retry. Live run logs via SSE. Prometheus, Loki, and Grafana cover latency and throughput across worker containers. | FastAPI - Playwright - Claude API - ARQ - Redis - Prometheus - Loki - Grafana - Docker |
+| [TruthTag: Cross-Modal FASTag Fraud Detection](https://github.com/Kunal-Somani/TruthTag-Toll-Audit) | Classical CV pipeline for cross-verifying digital RFID FASTag claims against physical vehicle geometry at toll plazas. 3780-dimensional HOG feature vectors, LinearSVC trained on 24K+ images, 97% accuracy on multi-axle vehicle classification. Includes a cross-modal centroid tracker, MOG2 virtual tripwire, misclassification error analysis, and a simulated audit pipeline with a Streamlit operator dashboard. | OpenCV - scikit-learn - HOG - LinearSVC - NumPy - Streamlit - Seaborn - Matplotlib |
 
 ---
 
@@ -40,10 +41,9 @@ Pre-final year undergrad working at the intersection of robotics, computer visio
 
 | Project | Description | Status |
 |---|---|---|
-| [Canary Rover](https://github.com/Kunal-Somani/canary-rover) | Autonomous mine inspection rover. PPO-trained locomotion in PyBullet (200K timesteps), ROS 2 sensor nodes for IMU, LiDAR, and BLDC encoders, full 3D visual simulation in NVIDIA Isaac Sim 5.1 with live sensor feeds, and SLAM via slam_toolbox and RTAB-Map. Crack detection, gas leak sensing, spark-proof chassis. Team of 5. | Ongoing — Capstone |
-| [MRI Reconstruction](https://github.com/Kunal-Somani/MRI_Reconstruction) | Dual-branch physics-guided deep learning framework for accelerated MRI reconstruction. A learned gating network routes k-space information adaptively, removing the need for anatomy labels at inference. Achieves +1.78% SSIM over single-branch baselines at 112ms per inference and 302 GFLOPs on an RTX 4060. | Ongoing |
-| Audio-Visual-Thermal SAR | Multimodal fusion architecture for autonomous search and rescue in visually degraded environments. Three sensing modalities fused for robust SLAM and object detection, under Dr. Ankit Soni at Thapar. | Ongoing |
-| AI Personal Assistant | Multimodal personal assistant exploring Mamba and beyond-transformer architectures as an alternative to the standard FAISS/RAG+LLM pattern. Speech, text, and document input modes. | In progress |
+| [Canary Rover](https://github.com/Kunal-Somani/canary-rover) | Autonomous mine inspection rover. PPO-trained locomotion in PyBullet (200K timesteps), ROS 2 sensor nodes for IMU, LiDAR, and BLDC encoders, full 3D visual simulation in NVIDIA Isaac Sim 5.1 with live sensor feeds, SLAM via slam_toolbox and RTAB-Map. Crack detection, gas sensing, spark-proof chassis. Team of 5. | Ongoing -- Capstone |
+| [MRI Reconstruction](https://github.com/Kunal-Somani/MRI_Reconstruction) | Dual-branch physics-guided deep learning framework for accelerated MRI reconstruction. A learned gating network routes k-space information adaptively, removing the need for anatomy labels at inference. Achieves +1.78% SSIM over single-branch baselines at 112ms per inference and 302 GFLOPs on an RTX 4060. | Paper authored |
+| Audio-Visual-Thermal SAR | Multimodal fusion architecture for autonomous search and rescue in visually degraded environments. Three sensing modalities fused for robust SLAM and object detection, under Dr. Ankit Soni at Thapar. Review paper authored; follow-up work in progress. | Review paper authored |
 
 ---
 
@@ -130,6 +130,6 @@ Pre-final year undergrad working at the intersection of robotics, computer visio
 
 <div align="center">
 
-Currently exploring: Physics-guided deep learning for medical imaging · RL-based autonomous navigation · Beyond-transformer sequence architectures · Multimodal sensor fusion for SAR
+Currently working on: Physics-guided deep learning for medical imaging -- RL-based autonomous navigation -- Multimodal sensor fusion for SAR -- Beyond-transformer sequence architectures
 
 </div>
