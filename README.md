@@ -2,8 +2,8 @@
 
 # Kunal
 
-**B.E. Robotics and Artificial Intelligence** -- Thapar Institute of Engineering and Technology
-**B.S. Data Science and Applications** -- Indian Institute of Technology Madras
+**B.E. Robotics and Artificial Intelligence** - Thapar Institute of Engineering and Technology
+**B.S. Data Science and Applications** - Indian Institute of Technology Madras
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/kunal-somani-227373344)
 [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:kunal120222@gmail.com)
