@@ -2,8 +2,8 @@
 
 # Kunal
 
-**B.E. Robotics & Artificial Intelligence**, Thapar Institute of Engineering & Technology  
-**B.S. Data Science & Applications**, Indian Institute of Technology Madras
+**B.E. Robotics and Artificial Intelligence** -- Thapar Institute of Engineering and Technology
+**B.S. Data Science and Applications** -- Indian Institute of Technology Madras
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/kunal-somani-227373344)
 [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:kunal120222@gmail.com)
@@ -13,7 +13,6 @@
 ---
 
 Pre-final year undergrad building at the intersection of robotics, computer vision, and autonomous systems. My work runs on real hardware and real infrastructure: multimodal ML pipelines, edge AI systems, agentic backends, and production-grade open-source tooling.
-
 
 **Open Source:** Active contributor at JdeRobot/RoboticsAcademy with 16 merged PRs. Resolved an FP16 precision crash in the Object Detection pipeline, fixed deployment script bugs across `run_academy.sh` and `develop_academy.sh`, refactored the Hardware Abstraction Layer, and shipped 52 unit tests across 5 test classes.
 
@@ -29,11 +28,11 @@ Pre-final year undergrad building at the intersection of robotics, computer visi
 
 | Project | Description | Stack |
 |---|---|---|
-| [Archon](https://github.com/Kunal-Somani/archon) | Production-deployable instruction-to-deployment backend. Takes a natural language prompt, retrieves context via hybrid RAG (Cohere dense + BM25 sparse, RRF fusion), generates schema-validated code using Anthropic Tool Use, and pushes a live site to GitHub Pages via a GitHub App deployer with short-lived installation tokens. FastAPI and Celery orchestrate async task execution; Redis Pub/Sub streams live logs over WebSocket to a React and TypeScript dashboard; Prometheus, Grafana, and OpenTelemetry cover full observability. Full integration and unit test suite with pre-push hooks. | FastAPI - Celery - Redis - Cohere - Anthropic API - React - TypeScript - Vite - PostgreSQL - SQLAlchemy - Alembic - Prometheus - Grafana - OpenTelemetry - Docker |
-| [Parkinson's Early Detection](https://github.com/eshaansingla/ParkinsonsEarlyPrediction) | Multimodal early detection fusing MPU9250 IMU tremor signals with voice recordings. CNN on extracted voice features (88% accuracy), DNN on tremor data, combined via late fusion weighting to reach 91%. Includes a custom ESP32 hardware data collection pipeline from sensor to model inference. | TensorFlow - Keras - Librosa - Parselmouth - scikit-learn - SoundDevice |
-| [Axon Core](https://github.com/Kunal-Somani/axon-core) | Production-deployable fully local tri-modal AI assistant. A BART-MNLI zero-shot semantic router dispatches queries across three processing paths: personal knowledge retrieval via Qdrant and local Gemma, OS-level tool execution with user confirmation, and general conversation. Hybrid RAG with MiniLM dense retrieval and BM25 sparse, reranked by a cross-encoder. GBNF grammar-constrained sampling for tool calling. Next.js frontend with FastAPI orchestrator, fully containerized. | FastAPI - LangChain - Qdrant - Ollama - Next.js - Docker - SQLAlchemy |
-| [Helix](https://github.com/Kunal-Somani/helix-agent) | Production-deployable recursive autonomous web agent built on the OODA loop. Playwright handles JS-heavy DOMs, Claude Tool Use synthesizes a Python solution just-in-time, RestrictedPython and SIGALRM sandbox execution, and HTTP submission loops until a terminal state is reached. Durable async jobs via ARQ on Redis with retry. Live run logs via SSE. Prometheus, Loki, and Grafana cover latency and throughput across worker containers. | FastAPI - Playwright - Claude API - ARQ - Redis - Prometheus - Loki - Grafana - Docker |
-| [TruthTag: Toll-Audit](https://github.com/Kunal-Somani/TruthTag-Toll-Audit) | Classical CV pipeline for cross-verifying digital RFID FASTag claims against physical vehicle geometry at toll plazas. 3780-dimensional HOG feature vectors, LinearSVC trained on 24K+ images, 97% accuracy on multi-axle vehicle classification. Includes a cross-modal centroid tracker, MOG2 virtual tripwire, misclassification error analysis, and a simulated audit pipeline with a Streamlit operator dashboard. | OpenCV - scikit-learn - HOG - LinearSVC - NumPy - Streamlit - Seaborn - Matplotlib |
+| [Archon](https://github.com/Kunal-Somani/archon) | Production-deployable instruction-to-deployment backend. Hybrid RAG (Cohere dense + BM25 sparse, RRF fusion) retrieves context, Anthropic Tool Use generates schema-validated code, and a GitHub App deployer pushes live sites to GitHub Pages. FastAPI and Celery handle async execution; Redis Pub/Sub streams logs over WebSocket to a React and TypeScript dashboard; full observability via Prometheus, Grafana, and OpenTelemetry. | FastAPI - Celery - Redis - Cohere - Anthropic API - React - TypeScript - Vite - PostgreSQL - SQLAlchemy - Alembic - Prometheus - Grafana - OpenTelemetry - Docker |
+| [Parkinson's Early Detection](https://github.com/eshaansingla/ParkinsonsEarlyPrediction) | Multimodal early detection fusing MPU9250 IMU tremor signals with voice recordings. CNN on voice features (88% accuracy) and DNN on tremor data combined via late fusion to reach 91%. Custom ESP32 hardware pipeline from sensor to model inference. | TensorFlow - Keras - Librosa - Parselmouth - scikit-learn - SoundDevice |
+| [Axon Core](https://github.com/Kunal-Somani/axon-core) | Production-deployable fully local tri-modal AI assistant. A BART-MNLI zero-shot router dispatches across three paths: knowledge retrieval via Qdrant and local Gemma, OS-level tool execution with user confirmation, and general conversation. Hybrid RAG with MiniLM and BM25, reranked by a cross-encoder; GBNF-constrained sampling for tool calling. | FastAPI - LangChain - Qdrant - Ollama - Next.js - Docker - SQLAlchemy |
+| [Helix](https://github.com/Kunal-Somani/helix-agent) | Production-deployable recursive autonomous web agent on the OODA loop. Playwright handles JS-heavy DOMs, Claude Tool Use synthesizes Python solutions just-in-time, RestrictedPython and SIGALRM sandbox execution, and HTTP submission loops until a terminal state. Durable jobs via ARQ on Redis; Prometheus, Loki, and Grafana cover observability. | FastAPI - Playwright - Claude API - ARQ - Redis - Prometheus - Loki - Grafana - Docker |
+| [TruthTag: Toll-Audit](https://github.com/Kunal-Somani/TruthTag-Toll-Audit) | Classical CV pipeline cross-verifying RFID FASTag claims against physical vehicle geometry at toll plazas. 3780-dimensional HOG vectors, LinearSVC trained on 24K+ images, 97% accuracy on multi-axle classification. Cross-modal centroid tracker, MOG2 virtual tripwire, and a Streamlit audit dashboard. | OpenCV - scikit-learn - HOG - LinearSVC - NumPy - Streamlit - Seaborn - Matplotlib |
 
 ---
 
@@ -41,9 +40,9 @@ Pre-final year undergrad building at the intersection of robotics, computer visi
 
 | Project | Description | Status |
 |---|---|---|
-| [Canary Rover](https://github.com/Kunal-Somani/canary-rover) | Autonomous mine inspection rover. PPO-trained locomotion in PyBullet (200K timesteps), ROS 2 sensor nodes for IMU, LiDAR, and BLDC encoders, full 3D visual simulation in NVIDIA Isaac Sim 5.1 with live sensor feeds, SLAM via slam_toolbox and RTAB-Map. Crack detection, gas sensing, spark-proof chassis. Team of 5. | Ongoing -- Capstone |
-| [MRI Reconstruction](https://github.com/Kunal-Somani/MRI_Reconstruction) | Dual-branch physics-guided deep learning framework for accelerated MRI reconstruction. A learned gating network routes k-space information adaptively, removing the need for anatomy labels at inference. Achieves +1.78% SSIM over single-branch baselines at 112ms per inference and 302 GFLOPs on an RTX 4060. | Paper authored |
-| Audio-Visual-Thermal SAR | Multimodal fusion architecture for autonomous search and rescue in visually degraded environments. Three sensing modalities fused for robust SLAM and object detection, under Dr. Ankit Soni at Thapar. Review paper authored; follow-up work in progress. | Review paper authored |
+| [Canary Rover](https://github.com/Kunal-Somani/canary-rover) | Autonomous mine inspection rover. PPO locomotion trained in PyBullet (200K timesteps), real-time ROS 2 sensor stack for IMU, LiDAR, and BLDC encoders, SLAM via slam_toolbox and RTAB-Map, and full 3D simulation in NVIDIA Isaac Sim 5.1. Capstone project, team of 5. | Ongoing -- Capstone |
+| [MRI Reconstruction](https://github.com/Kunal-Somani/MRI_Reconstruction) | Dual-branch physics-guided framework for accelerated MRI reconstruction. Learned gating network routes k-space data adaptively without anatomy labels at inference. Achieves +1.78% SSIM over single-branch baselines at 112ms and 302 GFLOPs on an RTX 4060. | Paper authored |
+| Audio-Visual-Thermal SAR | Multimodal fusion architecture for autonomous SAR in visually degraded environments. Thermal, acoustic, and visual modalities fused for robust SLAM and detection, under Dr. Ankit Soni at Thapar. | Review paper authored |
 
 ---
 
