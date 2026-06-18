@@ -36,3 +36,12 @@ Building at the intersection of autonomous systems, multimodal ML, and agentic b
   <img src="https://github-readme-stats.vercel.app/api?username=Kunal-Somani&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117" alt="GitHub Stats" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kunal-Somani&layout=compact&theme=radical&hide_border=true&bg_color=0D1117" alt="Top Languages" />
 </p>
+
+---
+### 📈 Contribution Matrix
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Kunal-Somani/Kunal-Somani/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Kunal-Somani/Kunal-Somani/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Kunal-Somani/Kunal-Somani/output/github-contribution-grid-snake.svg">
+</picture>
