@@ -51,6 +51,8 @@ A visual studio for testing and comparing prompts across Ollama, OpenAI, Anthrop
 ### [Canary Rover](https://github.com/Kunal-Somani/canary-rover) — autonomous mine-inspection scout · capstone
 PPO-trained locomotion (200K timesteps, PyBullet) → ROS 2 sensor stack (IMU / RPLiDAR / 4× BLDC encoders) → full Isaac Sim 5.1 simulation with live sensor feeds. **Currently in sim-to-real transfer; physical rover roughly half built.** Team of 5.
 
+<a href="https://github.com/Kunal-Somani/canary-rover"><img src="assets/canary_demo.gif" width="85%" alt="Canary Rover autonomous tunnel traversal in Isaac Sim"/></a>
+
 ### [object_finder](https://github.com/Kunal-Somani/object_finder) — map-less warehouse AMR · [▶ demo video](https://github.com/user-attachments/assets/c1a75752-a5f5-46bc-b5e6-5bc591ea847e)
 ROS 2 Humble skid-steer robot that navigates without SLAM: FSM + PD wall-following on 360° LiDAR, HSV + depth target tracking, tested in the AWS Small Warehouse Gazebo world.
 
