@@ -58,12 +58,11 @@ ROS 2 Humble skid-steer robot that navigates without SLAM: FSM + PD wall-followi
 
 ## Engineering Systems
 
-| Project | One line |
+| Project | Description |
 |---|---|
-| [Archon](https://github.com/Kunal-Somani/archon) | Natural-language brief → live deployed site: hybrid RAG (dense + BM25, RRF), grammar-constrained codegen, GitHub App deployer, Celery workers, full Prometheus/Grafana/OTel observability |
-| [Axon](https://github.com/Kunal-Somani/axon-core) | Fully local tri-modal assistant (text/speech/vision) — BART-MNLI router, hybrid RAG with cross-encoder reranking, GBNF-constrained tool calls, zero external LLM APIs |
-| [Helix](https://github.com/Kunal-Somani/helix-agent) | Autonomous recursive web-task agent with a RestrictedPython sandbox, durable async jobs, and live-streamed run logs |
-
+| [Archon](https://github.com/Kunal-Somani/archon) | • Natural-language brief → live deployed site: hybrid RAG (Cohere dense + BM25, RRF fusion) feeds grammar-constrained code generation<br>• Celery async workers, Redis Pub/Sub live WebSocket logs, GitHub App deployer with short-lived tokens, full Prometheus/Grafana/OTel observability |
+| [Axon](https://github.com/Kunal-Somani/axon-core) | • Fully local tri-modal assistant (text/speech/vision): BART-MNLI zero-shot router dispatches to knowledge RAG, confirmed OS tool execution, or chat<br>• Hybrid retrieval (Qdrant dense + BM25) reranked by a cross-encoder; GBNF grammar-constrained tool calls; zero external LLM APIs |
+| [TruthTag](https://github.com/Kunal-Somani/TruthTag-Toll-Audit) | • Classical CV pipeline cross-verifying RFID FASTag claims against physical vehicle geometry: 3780-dim HOG features + LinearSVC, 97% accuracy on 24K+ images<br>• Cross-modal centroid tracker with MOG2 virtual tripwire, misclassification error analysis, and a Streamlit operator audit dashboard |
 ---
 
 ## Tech Stack
