@@ -121,7 +121,7 @@ ROS 2 Humble skid-steer robot that navigates without SLAM: FSM + PD wall-followi
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Kunal-Somani&show_icons=true&include_all_commits=true&rank_icon=github&hide_border=true&bg_color=0b0f14&title_color=22d3ee&icon_color=f59e0b&text_color=c9d1d9&ring_color=22d3ee" alt="GitHub stats"/>
+<img height="170" src="https://github-readme-stats-liard-rho-19.vercel.app/api?username=Kunal-Somani&show_icons=true&include_all_commits=true&count_private=true&rank_icon=github&hide_border=true&bg_color=0b0f14&title_color=22d3ee&icon_color=f59e0b&text_color=c9d1d9&ring_color=22d3ee" alt="GitHub stats"/>
 <img height="170" src="https://streak-stats.demolab.com?user=Kunal-Somani&hide_border=true&background=0b0f14&ring=22d3ee&fire=f59e0b&currStreakLabel=22d3ee&sideLabels=c9d1d9&currStreakNum=e6edf3&sideNums=e6edf3&dates=5b6b7d" alt="Streak"/>
 
 <img width="94%" src="https://github-readme-activity-graph.vercel.app/graph?username=Kunal-Somani&bg_color=0b0f14&color=c9d1d9&line=22d3ee&point=f59e0b&area=true&area_color=22d3ee&hide_border=true" alt="Contribution graph"/>
