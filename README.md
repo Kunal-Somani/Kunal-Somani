@@ -44,7 +44,7 @@ A visual studio for testing and comparing LLM prompts across five providers (Oll
 
 | Work | Area | Status |
 |---|---|---|
-| [MRI Reconstruction](https://github.com/Kunal-Somani/MRI_Reconstruction) — dual-branch physics-guided deep learning; learned gating routes k-space adaptively, no anatomy labels at inference. +1.78% SSIM, 112 ms/slice | Medical imaging | Conference paper under review — IEEE SPL · Dr. Anurag Tiwari, TIET |
+| [MRI Reconstruction](https://github.com/Kunal-Somani/MRI_Reconstruction) — dual-branch physics-guided deep learning; learned gating routes k-space adaptively, no anatomy labels at inference. +1.78% SSIM, 112 ms/slice | Medical imaging | Paper accepted — IC3 (IEEE) · Dr. Anurag Tiwari, TIET |
 | [ThermoBridge](https://github.com/Kunal-Somani/thermobridge) 🔒 — bidirectional 3D MRI↔CT synthesis via Brownian-bridge diffusion with a learnable 3D anisotropic-diffusion mixer | Medical imaging | Paper in preparation · Dr. Anurag Tiwari, TIET |
 | Multi-Modal Sensor Fusion for SLAM in Visually Degraded SAR Environments — pipeline-oriented survey of 55 systems (2011–2025) | SAR robotics | Survey submitted · Dr. Ankit Soni, TIET |
 | SAR rover — simulated multi-modal (audio-visual-thermal) search-and-rescue platform 🔒 | SAR robotics | Journal paper #2, in progress · Dr. Ankit Soni, TIET |
